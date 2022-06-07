@@ -21,7 +21,7 @@ header .container{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 header .logo{
@@ -31,10 +31,20 @@ header .logo{
     font-size: 40px;
 }
 
+header .logo-netflix{
+    width: 8%;
+    margin: 15px 0;
+}
+
+header nav{
+    margin-left: 5%;
+}
+
 header nav a{
     text-decoration: none;
+    font-weight: bold;
     color: #AAA;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 header nav a:hover{
@@ -47,29 +57,31 @@ header nav a:hover{
     font-size: 16px;
     background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%) ,url('../img/penny_dreadful06.jpg') no-repeat;
 
-    height: 400px;
+    height: 500px;
     background-size: cover;
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
+}
+
+.filme-principal .titulo{
+    /*margin-top: 15%;*/
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
 }
 
 .filme-principal .descricao{
     margin-top: 10px;
     margin-bottom: 40px;
-}
-
-.filme-principal .titulo{
-    margin-top: 15%;
-    font-size: 40px;
-    font-family: 'Trebuchet MS', Arial, sans-serif;
+    color: #AAA;
 }
 
 .botao{
     background-color: rgba(0,0,0,.50);
     border: 1px solid white;
+    border-radius: 5px;
     color: white;
 
     padding: 15px 30px;
@@ -95,6 +107,7 @@ header nav a:hover{
 
 .filme-principal .container{
     width: 70%;
+    margin-top: 5%;
 }
 
 .box-filme{
@@ -105,4 +118,33 @@ header nav a:hover{
 
 .carrossel-filmes{
     margin-top: 5px;
+}
+
+.informacoes-adicionais{
+    display: flex;
+    flex-direction: row;
+    margin: 5px 0 20px 0;
+
+    font-size: 14px;
+    color: #AAA;
+}
+
+.info-add{
+    margin-right: 10px;
+}
+
+.relevancia{    
+    color: #6aae85;
+}
+
+.resolucao{
+    border: 1px solid #AAA;
+    border-radius: 3px;
+    padding: 2px 4px;
+}
+
+.audio{
+    border: 1px solid #AAA;
+    border-radius: 3px;
+    padding: 2px 4px;
 }
