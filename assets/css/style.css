@@ -148,3 +148,34 @@ header nav a:hover{
     border-radius: 3px;
     padding: 2px 4px;
 }
+
+.genero-container{
+    display: flex;
+    flex-direction: row;
+
+    color: #AAA;
+
+    margin-top: 30px;
+}
+
+.genero-elemento{
+    margin-left: 10px;
+}
+
+.genero-container h4{
+    font-weight: normal;
+}
+
+.item:hover{
+    transform: scale(1.1);
+    z-index: z-index(default);
+}
+
+.item:active{
+    transform: scale(0.95);
+}
+
+/* O 'padding' neste seletor propiciou o ajuste do zoom no mouseOver */
+.owl-stage-outer {
+    padding: 10px;
+}
